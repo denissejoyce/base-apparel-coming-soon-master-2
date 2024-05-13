@@ -1,0 +1,34 @@
+@use "../util" as u;
+
+body {
+  font-family: u.$font;
+  color: u.$primary-font;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.438rem;
+  // 7px;
+  font-size: 2.188rem;
+  // 35px;
+}
+
+h2 > span {
+  color: u.$secondary-font;
+  font-weight: 400;
+}
+
+main {
+  font-size: 0.938rem;
+  // 15px;
+}
+
+.userMsg {
+  font-weight: 600;
+  font-size: 85%;
+}
+
+.error {
+  color: u.$error-msg;
+}

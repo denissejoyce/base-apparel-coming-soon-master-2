@@ -1,0 +1,45 @@
+@use "../util/" as u;
+
+.inputEmail {
+  border-radius: 40px;
+  border: 1px solid u.$primary-font;
+  background-color: inherit;
+  padding: 0.625rem 0.938rem;
+  margin-right: -40px;
+  width: 15.625rem;
+  outline: none;
+  font-size: 0.875rem;
+  background-size: 1rem;
+
+  @include u.breakpoint(small) {
+    width: 21rem;
+  }
+}
+
+input[type="email"]::placeholder {
+  color: u.$primary-font;
+  opacity: 50%;
+}
+
+.invalidEmail {
+  border-color: u.$error-msg;
+  background-image: url(../../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: calc(15.625rem - 4.25rem) center;
+
+  @include u.breakpoint(small) {
+    background-position: calc(21rem - 4.25rem) center;
+  }
+}
+
+.userMsg {
+  width: 15.625rem;
+  margin: 0.5rem auto 0 auto;
+  overflow: hidden;
+  text-align: justify;
+
+  @include u.breakpoint(small) {
+    width: 21rem;
+    height: 3.75rem;
+  }
+}

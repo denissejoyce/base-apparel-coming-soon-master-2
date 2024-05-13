@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only">
+        Frontend Mentor Challenge: Base Apparel's coming soon page
+      </h1>
+      <a class="logo" href="#">
+        <img src="images/logo.svg" alt="" />
+      </a>
+    </header>
+    <main>
+      <div class="banner"></div>
+      <div>
+        <h2>We're<span>coming soon</span></h2>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div class="email-subscription">
+          <label for="email-sub" hidden="">Email Address</label>
+          <input
+            id="email-sub"
+            class="inputEmail"
+            type="email"
+            placeholder="Email Address"
+          />
+          <button class="btn-submit" onclick="checkInput()"></button>
+        </div>
+        <div id="userAlert" class="userMsg"></div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p> -->
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

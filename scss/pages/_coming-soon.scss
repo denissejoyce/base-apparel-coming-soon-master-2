@@ -1,0 +1,76 @@
+@use "../util/" as u;
+
+*:not(#email-sub, #userAlert) {
+  transition: 1s ease;
+}
+
+body {
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+
+  // @include u.breakpoint(small) {
+  //   overflow: visible;
+  // }
+  @include u.breakpoint(large) {
+    background-image: url(../../images/bg-pattern-desktop.svg);
+  }
+}
+
+h2 {
+  @include u.flexDisplay(column);
+
+  gap: 0.063rem;
+  line-height: 2.188rem;
+  margin: 2.5rem auto 1.25rem auto;
+  width: 12.5rem;
+}
+
+main {
+  text-align: center;
+  justify-content: justify;
+
+  @include u.flexDisplay(column);
+  @include u.breakpoint(large) {
+    @include u.flexDisplay(row-reverse);
+  }
+}
+
+p {
+  width: 20.625rem;
+  margin: 0.313rem auto 1.563rem;
+
+  @include u.breakpoint(small) {
+    width: 26rem;
+  }
+}
+
+.banner {
+  background-image: url(../../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+
+  @include u.breakpoint(small) {
+    height: 300px;
+  }
+}
+
+.email-subscription {
+  display: flex;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 6.875rem;
+  margin: 1.563rem 1.75rem;
+
+  @include u.breakpoint(small) {
+    width: 6.75rem;
+    margin: 1.438rem 1.063rem;
+  }
+}

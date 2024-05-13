@@ -1,0 +1,23 @@
+@use "../util/" as u;
+
+.btn-submit {
+  background-image: url(../images/icon-arrow.svg),
+    linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  border-radius: 28px;
+  width: 4.063rem;
+  // 65px;
+  height: 2.688rem;
+  // 43px;
+  box-shadow: 0 0.75rem 4.063rem 0.188rem u.$primary-font;
+  // box-shadow: 0 12px 65px 3px u.$primary-font;
+  float: inline-end;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background-image: url(../../images/icon-arrow.svg);
+  background-color: u.$button-grad;
+}
