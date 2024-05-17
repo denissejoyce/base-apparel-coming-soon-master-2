@@ -8,11 +8,14 @@
   margin-right: -40px;
   width: 15.625rem;
   outline: none;
-  font-size: 0.875rem;
   background-size: 1rem;
 
   @include u.breakpoint(small) {
     width: 21rem;
+  }
+  @include u.breakpoint(large) {
+    width: 25rem;
+    margin-right: -70px;
   }
 }
 
@@ -30,6 +33,9 @@ input[type="email"]::placeholder {
   @include u.breakpoint(small) {
     background-position: calc(21rem - 4.25rem) center;
   }
+  @include u.breakpoint(large) {
+    background-position: calc(25rem - 5.85rem) center;
+  }
 }
 
 .userMsg {
@@ -41,5 +47,8 @@ input[type="email"]::placeholder {
   @include u.breakpoint(small) {
     width: 21rem;
     height: 3.75rem;
+  }
+  @include u.breakpoint(large) {
+    margin-left: 10px;
   }
 }

@@ -8,12 +8,16 @@
   border: none;
   border-radius: 28px;
   width: 4.063rem;
-  // 65px;
   height: 2.688rem;
-  // 43px;
   box-shadow: 0 0.75rem 4.063rem 0.188rem u.$primary-font;
-  // box-shadow: 0 12px 65px 3px u.$primary-font;
   float: inline-end;
+
+  @include u.breakpoint(large) {
+    width: 6rem;
+  }
+  @include u.breakpoint(xlarge) {
+    height: 3rem;
+  }
 }
 
 .btn-submit:hover {
